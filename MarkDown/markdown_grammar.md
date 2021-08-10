@@ -56,7 +56,8 @@
 
 * `![문자열](주소, 확장자명)`을 통해 이미지를 사용 가능 
 
-  !![dog](md-images/dog.jpeg)
+  ![dog](md-images/dog-8586503.jpeg)
+  
   
 
 ### Blockquotes(인용문)

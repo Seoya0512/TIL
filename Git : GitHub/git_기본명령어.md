@@ -19,8 +19,8 @@ ___
 
   * untracked, modified 상태의 파일을 staged 로 변경
 
-  ```
-  git add <file>
+  ```bash
+  $ git add <file>
   
   <file>에는 단일 파일, 복수 파일, 단일 폴더, 현재 디렉토리(.)등이 들어갈 수 있다
   ```
@@ -35,7 +35,7 @@ ___
 
 * 커밋 메시지는 변경 사항을 나타낼 수 있도록 명확하게 작성
 
-  ```
+  ```bash
   $ git commit -m'<commit msg>'
   ```
 
@@ -54,7 +54,7 @@ ___
 
 * 저장소의 commit(버전)이 push
 
-  ```
+  ```bash
   $ git push <원격저장소이름><브랜치이름>
   ```
 
@@ -76,7 +76,7 @@ ___
 
 * 다양한 옵션을 통해 로그 조회 가능 
 
-  ```
+  ```bash
   $ git log -1
   $ git log -oneline
   $ git log -2 --oneline
@@ -94,10 +94,10 @@ ___
 
 * **global user** : Github에서 설정한 사용자 정보 
 
-  ```
-  git config -global.user.name "username"
+  ```bash
+  $ git config -global.user.name "username"
   
-  git config -global.user.email"my@email.com
+  $ git config -global.user.email"my@email.com
   ```
 
 * 설정 확인
@@ -130,31 +130,31 @@ ___
 
 * remote 확인 
 
-  ```
+  ```bash
   $ git remote -v
   ```
 
 * remote 추가
 
-  ```
+  ```bash
   $ git remote add<이름><url>
   ```
 
 * remote 삭제
 
-  ```
+  ```bash
   $ git remote rm<이름>
   ```
 
 * remote url 변경
 
-  ```
+  ```bash
   $ git remote set-url<이름><url>
   ```
 
 * remote 이름 변경
 
-  ```
+  ```bash
   $ git remote rename<이름><새이름>
   ```
 
@@ -168,8 +168,11 @@ ___
 
      - 원격 저장소로 부터 변경된 내역을 받아와서 이력을 병합함
 
-       ```
+       ```bash
        $ git pull <원격저장소이름><브랜치이름>
        ```
 
-       
+  3. **git ignore**
+     * 특정 확장자에 가능  (*.mp4)
+     * 특정 폴더에 가능 
+     * 특정 파일에 가능 

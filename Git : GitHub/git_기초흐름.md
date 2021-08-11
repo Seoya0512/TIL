@@ -16,7 +16,7 @@ ___
 
 - **원격저장소(remote repository)**를 통하여 협업하고, 모든 히스토리를 클라이언트들이 공유
 
-  ![DVCS](/Users/youngseolee/Workspace/md-images/DVCS.png)
+  ![DVCS](md-images/DVCS-8646828.png)
 
 
 
@@ -45,4 +45,4 @@ ___
 
      
 
-   ![lifecycle](/Users/youngseolee/Workspace/md-images/lifecycle.png)
+   ![lifecycle](md-images/lifecycle-8646841.png)

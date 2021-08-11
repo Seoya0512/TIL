@@ -193,7 +193,7 @@ $ git log # 확인
    $ git log --oneline --graph
    ```
 
-   ![log_graph2](../../md-images/log_graph2.png)
+   ![log_graph2](md-images/log_graph2-8646909.png)
 
 9. branch 삭제
 
@@ -306,7 +306,7 @@ $ git log # 확인
     $ git log --oneline --graph
     ```
 
-![log_graph1](../../md-images/log_graph1.png)
+![log_graph1](md-images/log_graph1-8646893.png)
 
 
 10. branch 삭제

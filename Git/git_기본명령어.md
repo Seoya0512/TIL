@@ -199,3 +199,13 @@ $ git push -u origin master
 
 ```
 
+
+
+### git hub 로 푸쉬하지 않은 "마지막"커밋 메시지를 다시 작성
+
+```bash
+$ git commit --amend -m 'Revise~~~'
+```
+
+
+

@@ -82,16 +82,13 @@ $ git log # 확인
    $ git commit -m 'Complete About page'
    ```
 
-3. log 결과 확인
+3. log 결과 확인 후 master 이동 
 
    ```bash
    $ git log
-   ```
-
-
-3. master 이동
-
-   ```bash
+   
+   # git log 화면을 종료, 나가기 = q
+   
    (feature/about) $ git checkout master
    (master)
    ```

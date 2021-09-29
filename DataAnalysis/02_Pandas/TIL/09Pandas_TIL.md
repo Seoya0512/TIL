@@ -72,7 +72,76 @@ df['열 이름'] = df.['열 이름'].apply(lambda x :int(x.replace(',','')))
 
 
 
+### 데이터 전처리 하면서 많이 사용한 문법 
+
+___
+
+Date :  Sep, 28, 2021(Mon)
+
+##### 1) values.count()를 데이터프레임으로 만들기
+
+​	- values.count()는 데이터프레임으로 만들 수 없음, Series로 실행됨 
+
+```python
+df.groupby('열이름')['열이름'].values_count().to_frame()
+```
 
 
 
+**2) 행,열 데이터 삭제하기**
+
+```python
+# 열데이터 삭제 
+df.drop('열이름', axis =1)
+
+# 행데이터 삭제 
+df.drop('행이름/index', axis =0)
+```
+
+
+
+**3) 필요한 정보만 출력하기 (조건에 의한)**
+
+```python
+# 열이름 데이터 중에서 0이 아닌 값만 포함한다 
+
+df = df[df.'열이름' != 0]
+```
+
+
+
+Date : Sep, 29, 2021(Tues)
+
+**1) pd.concat 을 진행할 때, 기존의 index값은 무시하고 합치기 ** 
+
+```python
+pd.concat([df1, df2], ignore_index = True)
+```
+
+
+
+**2) index를 새로 정의할때 ** 
+
+```python
+df.set_index('정의할 열이름(key)', inplace=True)
+```
+
+
+
+**3) 행의 값을 더하는 방법 ** 
+
+- 데이터프레임 마지막 "합계(행)"을 만들고 싶을때 사용함 ➕
+
+```python
+cols = ['상급종합병원', '종합병원', '병원', '의원']
+df_local['총합'] = df_local[cols].sum(axis=1)
+```
+
+
+
+**4) csv, excel 등 파일로 저장할 때 'index' 포함하지 않기 **
+
+```python
+pd.to_csv('filename.csv', index=False)
+```
 

@@ -10,7 +10,7 @@ ___
 
 ___
 
-Markdown, jupyter notebook을 활용하역 작성
+Markdown, jupyter notebook을 활용하여 작성
 
 
 

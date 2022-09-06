@@ -1,0 +1,15 @@
+/* foot */
+.foot {
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.ct {
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    color: #333232;
+    font-size: 18px;
+    font-style: italic;
+    margin: 20px;
+}

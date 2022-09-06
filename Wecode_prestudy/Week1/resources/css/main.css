@@ -1,0 +1,52 @@
+
+#header {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight:light;
+    color:#333232d5;
+}
+
+/* menu */
+
+.menu li {
+    margin: 35px;
+}
+
+.menu li a {
+    color: #333232;
+    text-decoration: none;
+}
+
+.menu * {
+    display: inline;
+}
+
+.menu ul {
+    padding-left: 0px;
+}
+
+.menu {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    align-items: center;
+    padding-top: 30px;
+}
+/* img */
+
+.contact__pic {
+    width: 100%;
+    height: 450px;
+    margin: auto;
+    object-fit: cover;
+    padding-top: 30px;
+}
+
+.message {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    color:#333232d5
+}

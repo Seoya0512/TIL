@@ -34,14 +34,15 @@
 }
 
 /* picture */ 
+
 .main {
-    height: 100%;
-    width: 55%;
+    height: 90%;
+    width: 50%;
     position: fixed;
     z-index: 1;
     top: 0;
     overflow-x: hidden;
-    padding-top: 120px;
+    padding-top: 130px;
   }
   
 
@@ -77,11 +78,10 @@
 
 .intext {
     float: center;
-    padding-left: 50px;
     color:#333232d5;
 }
 
-.message {
+footer {
     font-size: 20px;
     font-style: italic;
     text-align: center;

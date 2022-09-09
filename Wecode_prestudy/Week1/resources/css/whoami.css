@@ -2,11 +2,14 @@
     text-align: center;
     font-family: 'Roboto Slab', serif;
     font-weight:light;
+}
+
+a {
+    text-decoration: none;
     color:#333232d5;
 }
 
 /* menu */
-
 .menu li {
     margin: 35px;
 }
@@ -30,61 +33,68 @@
     text-align: center;
     align-items: center;
     padding-top: 30px;
-    padding-bottom: 30px;
 }
 
-/* picture */ 
+/* 메인 내용을 float= "left"를 사용해 두 단락으로 나누기 */ 
 
-.main {
-    height: 90%;
+.whoami_wrap {
+    position: relative;
+    width: 100%;
+}
+
+.whoami_pic {
     width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 130px;
-  }
-  
-
-.left {
-    left: 0;
+    height: 500px;
+    float: left;
 }
 
-.right {
-    right: 0;
-}
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-.centered img {
-    width: 485px;
-    height: 465px;
-    border-radius: 70%;
+.whoami_pic img {
+    display: block;
+    margin: auto;
+    width: 460px;
+    height: 460px;
     overflow: auto;
     object-fit: fill;
-    text-align: left;
-}
-
-.intro {
     text-align: center;
-    color: black;
+    padding-top: 70px;
 }
 
-.intext {
-    float: center;
-    color:#333232d5;
+.whoami_text {
+    width: 50%;
+    height: 500px;
+    float: left;
 }
 
-footer {
+.whoami_text_name {
+    font-size: 36px;
+    font-weight: 400;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.whoami_text_name:after {
+    content: "";
+    display: block;
+    width: 180px;
+    border-bottom: 2px solid darkgray;
+    margin: 10px auto;
+  }
+
+.whoami_text_description {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight:400;
+    text-align: center;
+    color: #333232d5;
+}
+
+.whoami_text_description p {
     font-size: 20px;
     font-style: italic;
     text-align: center;
     align-items: center;
+    padding-top: 18px;
     color:#333232d5;
 }

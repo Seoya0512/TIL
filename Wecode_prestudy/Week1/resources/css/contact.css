@@ -2,9 +2,12 @@
     text-align: center;
     font-family: 'Roboto Slab', serif;
     font-weight:light;
-    color:#333232d5;
 }
 
+a {
+    text-decoration: none;
+    color:#333232d5;
+}
 /* menu */
 
 .menu li {
@@ -15,6 +18,12 @@
     color: #333232;
     text-decoration: none;
 }
+
+.menu li a:hover {
+    text-decoration: underline;
+    text-decoration-color:gray;
+    text-decoration-thickness: 3px;
+  }
 
 .menu * {
     display: inline;
@@ -33,18 +42,51 @@
 }
 
 
-/* foot */
-.foot {
-    text-align: center;
-    align-items: center;
-    margin-top: 30px;
+/* contact info */
+.contact_pic {
+    width: 400px;
+    height: 400px;
+    border-radius: 30%;
+    padding-top: 50px;
 }
 
+.contact_text{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contact_text_info {
+    text-align: center;
+    align-items: center;
+}
+
+strong:after {
+    /* Highlight color */
+    background-color: beige;
+  
+    content: "";
+    position: absolute;
+    width: calc(100% + 4px);
+    height: 60%;
+    left: -2px;
+    bottom: 0;
+    z-index: -1;
+    transform: rotate(-2deg);
+  }
+
 .ct {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Benne', serif;
     text-decoration: none;
     color: #333232;
-    font-size: 18px;
+    font-size: 22px;
     font-style: italic;
     margin: 20px;
+    transition: 0.5s;
 }
+
+.ct:hover {
+    font-size: 25px;
+  }

@@ -19,6 +19,12 @@ a {
     text-decoration: none;
 }
 
+.menu li a:hover {
+    text-decoration: underline;
+    text-decoration-color:gray;
+    text-decoration-thickness: 3px;
+}
+
 .menu * {
     display: inline;
 }

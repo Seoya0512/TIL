@@ -22,7 +22,7 @@ a {
 .menu li a:hover {
     text-decoration: underline;
     text-decoration-color:gray;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 2px;
 }
 
 .menu * {
@@ -40,3 +40,113 @@ a {
     align-items: center;
     padding-top: 30px;
 }
+
+/* What I did List */
+.whatidid_wrap {
+    position: relative;
+    width: 100%;
+}
+
+.whatidid_list {
+    width: 33.33%;
+    height: 500px;
+    float: left;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.image img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    overflow: auto;
+    object-fit: fill;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 20%;
+}
+
+.image__overlay1 {
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.25s;
+}
+
+.image__overlay1 {
+    opacity: 0;
+}
+
+.image__overlay1:hover {
+    opacity: 1;
+}
+
+.image__overlay2 {
+    position: absolute;
+    top: 130px;
+    left: 450px;
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.25s;
+}
+
+.image__overlay2 {
+    opacity: 0;
+}
+
+.image__overlay2:hover {
+    opacity: 1;
+}
+
+.image__overlay3 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+    background: rgba(0, 0, 0, 0.6);
+    top: 130px;
+    left: 850px;
+    font-family: 'Quicksand', sans-serif;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.25s;
+}
+
+.image__overlay3 {
+    opacity: 0;
+}
+
+.image__overlay3:hover {
+    opacity: 1;
+}
+
+.whatidid_list p {
+    padding-top: 40px;
+    margin:auto;
+    font-size: 15px;
+}
+
+
+

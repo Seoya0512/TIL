@@ -22,7 +22,7 @@ a {
 .menu li a:hover {
     text-decoration: underline;
     text-decoration-color:gray;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 2px;
   }
 
 .menu * {

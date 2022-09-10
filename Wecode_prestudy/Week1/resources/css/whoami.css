@@ -55,15 +55,27 @@ a {
     float: left;
 }
 
+#explain {
+    text-align: center;
+    padding-top: 10px;
+    margin: auto;
+    opacity: 0;
+}
+
 .whoami_pic img {
     display: block;
     margin: auto;
-    width: 460px;
-    height: 460px;
+    width: 450px;
+    height: 350px;
     overflow: auto;
     object-fit: fill;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 130px;
+}
+
+.whoami_pic:hover #explain{
+    opacity: 1;
+    text-align: center;
 }
 
 .whoami_text {
@@ -80,11 +92,11 @@ a {
 }
 
 .whoami_text_description {
+    font-size: 18px;
+    font-weight:310px;
     margin-top: 30px;
     margin-left: auto;
     margin-right: 50px;
-    font-size: 20px;
-    font-weight:310px;
     text-align: center;
     color: #333232d5;
 }
@@ -97,3 +109,8 @@ a {
     padding-top: 18px;
     color:#333232d5;
 }
+
+.half_HL {
+    background: linear-gradient(to top, #FFE400 50%, transparent 50%);
+}
+

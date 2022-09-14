@@ -1,3 +1,18 @@
+/* Background Effects */
+.background { 
+    animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+/* Header */
 #header {
     text-align: center;
     font-family: 'Roboto Slab', serif;
@@ -25,7 +40,6 @@ a {
     text-decoration-thickness: 3px;
 }
 
-
 .menu * {
     display: inline;
 }
@@ -46,10 +60,6 @@ a {
 
 .whoami_wrap {
     position: relative;
-    width: 100%;
-}
-
-.whoami_pic {
     width: 50%;
     height: 500px;
     float: left;
@@ -62,10 +72,10 @@ a {
     opacity: 0;
 }
 
-.whoami_pic img {
+.whoami_wrap img {
     display: block;
     margin: auto;
-    width: 450px;
+    width: auto;
     height: 350px;
     overflow: auto;
     object-fit: fill;
@@ -73,15 +83,9 @@ a {
     padding-top: 130px;
 }
 
-.whoami_pic:hover #explain{
+.whoami_wrap:hover #explain{
     opacity: 1;
     text-align: center;
-}
-
-.whoami_text {
-    width: 50%;
-    height: 500px;
-    float: left;
 }
 
 .whoami_text_name {
@@ -110,6 +114,7 @@ a {
     color:#333232d5;
 }
 
+/*특정 값에 밑줄 */
 .half_HL {
     background: linear-gradient(to top, #FFE400 50%, transparent 50%);
 }

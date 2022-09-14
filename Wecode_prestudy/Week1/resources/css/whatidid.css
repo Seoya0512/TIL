@@ -1,3 +1,18 @@
+/* Background Effects */
+.background { 
+    animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+/* Header */
 #header {
     text-align: center;
     font-family: 'Roboto Slab', serif;
@@ -42,110 +57,69 @@ a {
 }
 
 /* What I did List */
-.whatidid_wrap {
+.wrapper {
     position: relative;
-    width: 100%;
-}
-
-.whatidid_list {
-    width: 33.33%;
+    width: 25%;
     height: 500px;
     float: left;
     text-align: center;
     padding-top: 50px;
 }
 
-.image img {
+.container {
+    position: relative;
+    height: auto;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+.image {
     display: block;
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 20%;
     margin: auto;
     overflow: auto;
     object-fit: fill;
     text-align: center;
+    background-size: cover;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color:rgba(0, 0, 0, 0.6);
+    transition: opacity 0.25s;
+    border-radius: 20%;
+}
+  
+.container:hover .overlay {
+    opacity: 1;
+}
+  
+.text {
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.wrapper h5 {
     padding-top: 20px;
-    border-radius: 20%;
-}
-
-.image__overlay1 {
-    position: absolute;
-    top: 130px;
-    left: 50px;
-    width: 300px;
-    height: 300px;
-    border-radius: 20%;
-    background: rgba(0, 0, 0, 0.6);
-    color: #ffffff;
-    font-family: 'Quicksand', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.25s;
-}
-
-.image__overlay1 {
-    opacity: 0;
-}
-
-.image__overlay1:hover {
-    opacity: 1;
-}
-
-.image__overlay2 {
-    position: absolute;
-    top: 130px;
-    left: 450px;
-    width: 300px;
-    height: 300px;
-    border-radius: 20%;
-    background: rgba(0, 0, 0, 0.6);
-    color: #ffffff;
-    font-family: 'Quicksand', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.25s;
-}
-
-.image__overlay2 {
-    opacity: 0;
-}
-
-.image__overlay2:hover {
-    opacity: 1;
-}
-
-.image__overlay3 {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    border-radius: 20%;
-    background: rgba(0, 0, 0, 0.6);
-    top: 130px;
-    left: 850px;
-    font-family: 'Quicksand', sans-serif;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.25s;
-}
-
-.image__overlay3 {
-    opacity: 0;
-}
-
-.image__overlay3:hover {
-    opacity: 1;
-}
-
-.whatidid_list p {
-    padding-top: 40px;
-    margin:auto;
-    font-size: 15px;
 }
 
 

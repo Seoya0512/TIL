@@ -25,20 +25,20 @@ Figma(디자인 기획) HTML, CSS
 
 <br>
 
-![메인페이지](./resources/images/md_main.png)
+![메인페이지](../resources/images/md_main.png)
 
 ### 배운점 
 1. `float` 의 속성 : HTML요소가 주변의 다른 요소들과 자연스럽게 어울리도록 설정해준다.
 <br>
 
-![float사용](./resources/images/md_whoami.png)
+![float사용](../resources/images/md_whoami.png)
 - 사진 좌측에 텍스트가 배치될 수 있도록 `float: left` 속성을 사용함
 
 2. `div` 혹은 단락 구분의 중요성 
 <br>
 div는 html에서 단락을 나눠주는 중요한 역할을 하는데 큰 뜻은 없으면서 큰 역할을 한다. 어떻게 묶어 주느냐에 따라 **페이지의 구조**가 변한다.
 
-![div 사용](./resources/images/md_whatidid.gif)
+![div 사용](../resources/images/md_whatidid.gif)
 <br>
 
 ```html

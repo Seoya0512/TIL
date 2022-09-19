@@ -1,3 +1,6 @@
 credits.csv
 movies_metadata.csv
-*.DS_Store
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store

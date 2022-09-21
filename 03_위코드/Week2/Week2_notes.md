@@ -1,12 +1,6 @@
 # WEEK 2 : JavaScript
 
-Created: September 15, 2022 10:05 AM
-
-[스터디 자료 및 기록 ](https://www.notion.so/02a3a83a4e4c4c95a5384ae3289250fa)
-
 # 💁🏻‍♂️ 학습 가이드
-
----
 
 - 변수가 필요한 이유와 선언하는 방법
 - 자바스크립트 데이터 타입의 종류
@@ -16,6 +10,7 @@ Created: September 15, 2022 10:05 AM
 - 조건문이 필요한 이유
 
 ---
+<br>
 
 ## 변수 (variable)
 
@@ -23,7 +18,9 @@ Created: September 15, 2022 10:05 AM
     
     예시)  변수 `messag`는  message 라는 이름표가 붙어 있는 상장에 “Hello!” 값을 저장
     
-- 데이터에 고유의 이름인 식별자(identifier)를 명시하여 **1) 메모리에 저장된 값(데이터)를 참조(재사용)**한다. **2)** 변수명을 통해 **코드의 가독성을 향상**시킨다.
+- 데이터에 고유의 이름인 식별자(identifier)를 명시하여 **1) 메모리에 저장된 값(데이터)를 참조(재사용)** 한다. **2)** 변수명을 통해 **코드의 가독성을 향상**시킨다.
+  
+<br>
 
 ### 변수의 선언
 
@@ -80,11 +77,12 @@ console.log(name) // 'Lee'
         
     3. 변수의 중복 선언을 허용하지만 의도치 않은 변수값 변경을 일으킬 수 있음  
     4. 변수 호이스팅 : 변수를 선언하기 전에 참조가 가능하다. (변수 선언 위치가 상관 없음)
+   
+<br>
 
-<aside>
-🐥 Javascript에서 변수를 선언할 때 1) const를 사용한다  2) 재할당이 필요한 경우 let 키워드를 사용 3) 변수의 스코프는 최대한 좁게 생성한다.
+> 🐥 Javascript에서 변수를 선언할 때 1) const를 사용한다  2) 재할당이 필요한 경우 let 키워드를 사용 3) 변수의 스코프는 최대한 좁게 생성한다.
 
-</aside>
+<br>
 
 ### ➕ 변수 호이스팅
 
@@ -96,12 +94,11 @@ console.log(name) // 'Lee'
 2. 초기화 단계 : 등록된 변수를 메모리에 할당, undefined로 초기화
 3. 할당 단계 (실제 값을 할당) 
 
-< `var` 선언 했을 때 일어나는 변수 호이스팅 >
+**< `var` 선언 했을 때 일어나는 변수 호이스팅 >**
 
 `var` 키워드로 선언된 변수는 선언단계와 초기화 단계가 한번에 이루어 진다. 변수 선언문 이전에 변수에 접근해도 에러가 발생하지 않고 **undefined를 반환** 
 
 ```jsx
-
 // ① undefined : 변수 호이스팅으로 var foo;(선언문)이 객체에 등록
 console.log(foo); 
 var foo = 123;
@@ -116,11 +113,13 @@ console.log(foo);
 console.log(foo); 
 ```
 
-![var 키워드로 선언된 변수의 Life Cycle (출처 : Poiema web)](WEEK%202%20JavaScript%203412dcdad9ed4b4486000661cdaf11cb/var_lifecycle.png)
+![var 키워드로 선언된 변수의 Life Cycle (출처 : Poiema web)](resources/images/var_lifecycle.png)
 
 var 키워드로 선언된 변수의 Life Cycle (출처 : Poiema web)
 
-< `let` 선언 했을 때 일어나는 변수 호이스팅 > 
+<br>
+
+**< `let` 선언 했을 때 일어나는 변수 호이스팅 >**
 
 `let` 선언문은 선언 과 초기화가 분리되어 진행되어, 두 과정 사이의 ‘일시적 사각지대(TDZ)’이 존재한다. 
 
@@ -137,16 +136,18 @@ foo = 1;
 console.log(foo); // 1
 ```
 
-![var 키워드로 선언된 변수의 Life Cycle (출처 : Poiema web)](WEEK%202%20JavaScript%203412dcdad9ed4b4486000661cdaf11cb/let_lifecycle.png)
+![var 키워드로 선언된 변수의 Life Cycle (출처 : Poiema web)](resources/images/let_lifecycle.png)
 
 var 키워드로 선언된 변수의 Life Cycle (출처 : Poiema web)
 
+<br>
 참고 자료 
 
 1. [https://poiemaweb.com/es6-block-scope](https://poiemaweb.com/es6-block-scope)
 2. [https://poiemaweb.com/js-data-type-variable](https://poiemaweb.com/js-data-type-variable)
 
 ---
+<br>
 
 ## 자바스크립트 데이터 타입의 종류
 
@@ -164,6 +165,8 @@ var 키워드로 선언된 변수의 Life Cycle (출처 : Poiema web)
 > **객체 타입** 
 > 
 > - `object` : 이름과 값(property), 메소드(method)를 포함한 독립적 주체
+
+<br>
 
 ### `number` 메서드
 
@@ -186,6 +189,7 @@ Number.toString();
 //소숫점자리를 반올림하여 문자열로 봔환
 Number.toFixed([fractionDigits]);
 ```
+<br>
 
 ### `string` 메서드
 
@@ -210,12 +214,14 @@ str.toUpperCase();
 
 ```
 
+<br>
 참고 자료 
 
 1. number 메소드 : [https://poiemaweb.com/js-number](https://poiemaweb.com/js-number)  
 2. string 메소드 :  [https://poiemaweb.com/js-string](https://poiemaweb.com/js-string)
 
 ---
+<br>
 
 ## 함수 (Function)
 
@@ -229,16 +235,21 @@ str.toUpperCase();
     > 3. 함수의 매개변수에 전달할 수 있다.
     > 4. 반환값으로 사용할 수 있다.
 
+
 ### 함수가 필요한 이유
 
 1. **코드의 재사용** : 한번 선언해 놓으면 계속해서 재사용이 가능하다. 
 2. 명령어의 시작과 끝을 명확하게 구분할 수 있다. 
 
-### **함수의 구성 요소**
+<br>
+
+### 함수의 구성 요소
 
 1. input 받기
 2. 기능 수행 
 3. output 실행 (retrun)
+
+<br>
 
 ### **함수 생성 : 선언 → 실행 ( = 정의 → 호출)**
 
@@ -267,6 +278,7 @@ var square = new Function('number', 'return number * number')
 // 실행 및 호출 
 console.log(square(10)); // 100
 ```
+<br>
 
 ### input이 있는 함수
 
@@ -286,6 +298,7 @@ console.log(square(10)); // 100
     sayHello4('Hi')
     ```
     
+<br>
 
 ### 함수 호출
 
@@ -317,6 +330,7 @@ console.log(num); // 100
 // 객체타입의 경우 값을 저장해서 전달해 함수를 적용해 그 값도 변화됨 
 console.log(obj); // Object {name: 'Kim', gender: 'female'}
 ```
+<br>
 
 ### **함수 반환 (return)**
 
@@ -342,8 +356,9 @@ console.log(sayHellow2());
 let myFriend = sayHello2()
 console.log(myFriend);
 ```
+<br>
 
-### **return 과 console.log의 차이점**
+### return 과 console.log의 차이점
 
 `return` 
 
@@ -356,6 +371,8 @@ console.log(myFriend);
 
 - 단순히 화면에 출력
 - 변수에 할당 불 가능
+
+<br>
 
 ### ➕ 함수 호이스팅
 
@@ -386,6 +403,7 @@ var square = function(number) {
 참고 : [https://poiemaweb.com/js-function](https://poiemaweb.com/js-function)
 
 ---
+<br>
 
 ## 조건문(Conditional Statement)
 
@@ -422,6 +440,7 @@ else {
 
 var result = x % 2 ? '홀수' '짝수';
 ```
+<br>
 
 **Truthy & Falsy :** 불리언 값을 기대하는 문맥에서 암묵적  타입 변환 
 
@@ -434,48 +453,34 @@ var result = x % 2 ? '홀수' '짝수';
     - NaN
     - ‘ ‘ (빈 문자열)
 
+<br>
+
 ### 연산자(Operator)
 
 1. 산술 연산자 : 수학적 계산 수행 
 2. 할당 연산자 : 우항에 있는 피연산자 평가 결과를 좌항 변수헤 할당 
 3. **비교 연산자** 
+4. **논리 연산자** : and, or not 
+<br>
+  ```jsx
+  // 논리합(||) 연산자
+  true || true   // true
+  true || false  // true
+  false || true  // true
+  false || false // false
 
-| 비교 연산자 | 의미 |
-| --- | --- |
-| == | 동등 비교 |
-| === | 일치 비교 |
-| != | 부등 비교 |
-| !== | 불일치 비교 |
-| > | 크다 |
-| < | 작다 |
-| >= | 같거나 크다 |
-| <= | 같거나 작다 |
-1. **논리 연산자** : and, or not 
+  // 논리곱(&&) 연산자
+  true && true   // true
+  true && false  // false
+  false && true  // false
+  false && false // false
 
-| 논리 연산자 | 의미 |
-| --- | --- |
-| || | OR |
-| && | AND |
-| ! | NOT |
+  // 논리 부정(!) 연산자
+  !true  // false
+  !false // true
+  ```
 
-```jsx
-// 논리합(||) 연산자
-true || true   // true
-true || false  // true
-false || true  // true
-false || false // false
-
-// 논리곱(&&) 연산자
-true && true   // true
-true && false  // false
-false && true  // false
-false && false // false
-
-// 논리 부정(!) 연산자
-!true  // false
-!false // true
-```
-
+<br>
 참고 자료 
 
 1. [https://poiemaweb.com/js-operator#4-삼항-조건-연산자](https://poiemaweb.com/js-operator#4-%EC%82%BC%ED%95%AD-%EC%A1%B0%EA%B1%B4-%EC%97%B0%EC%82%B0%EC%9E%90)

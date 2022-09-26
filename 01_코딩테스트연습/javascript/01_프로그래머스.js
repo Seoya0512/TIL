@@ -40,8 +40,25 @@ function solution(arr, divisor) {
 }
 
 
-// 나누어 떨어지는 숫자 배열  : filter 사용하신 어던 분.. 대박임..
+// 나누어 떨어지는 숫자 배열  : filter 사용하신 어떤 분.. 대박임..
 function solution(arr, divisor) {
     var answer = arr.filter(v => v%divisor == 0);
     return answer.length == 0 ? [-1] : answer.sort((a,b) => a-b);
 }
+
+// 자릿수 더하기 
+function solution(n){
+    let answer = 0;
+    let num = n.toString().split('');
+    for (let i = 0; i < num.length; i++){
+      answer += Number(num[i])
+    }
+    return answer
+  }
+
+// 나머지가 1이 되는 수 찾기
+function solution(n){
+    for (let i = 1; i <= n; i++){
+      if (n % i === 1) return i;
+    }
+  };

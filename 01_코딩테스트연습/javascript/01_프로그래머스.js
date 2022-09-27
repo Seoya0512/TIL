@@ -62,3 +62,13 @@ function solution(n){
       if (n % i === 1) return i;
     }
   };
+
+// 문자열 다루기 기본 - 지수가 포함된 문자열에서 ERROR
+function solution(s){
+    if (s.length === 4 || s.length ===6) return !isNaN(s)
+      }
+
+// 문자열 다루기 답 - 숫자만 찾아내는 정규표현식 사용 
+function solution(s){ 
+    return (s.length === 4 || s.length ===6)? /^[0-9]+$/.test(s): false;
+  }

@@ -6,4 +6,5 @@
 
 #### WEEK 2 - 4 : Javascript 기초
 - [스터디 노트 week2](./Week2/Week2_notes.md)
-- [스터디 노트 week2 - Array](./Week3/Week3_Array.md)
+- [스터디 노트 week3 - Array](./Week3/Week3_Array.md)
+- [스터디 노트 week3 - 반복문](./week3/Week3_Loop.md)

@@ -169,3 +169,8 @@
         numbers.concat(numbers2);      // [ 1, 2, 3, 3, 4, 5 ]
 
         ```
+
+참고자료
+1. img : 위코드 제공자료
+2.  https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array
+3. https://poiemaweb.com/js-array

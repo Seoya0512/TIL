@@ -481,6 +481,7 @@ var result = x % 2 ? '홀수' '짝수';
   ```
 
 <br>
+
 참고 자료 
 
 1. [https://poiemaweb.com/js-operator#4-삼항-조건-연산자](https://poiemaweb.com/js-operator#4-%EC%82%BC%ED%95%AD-%EC%A1%B0%EA%B1%B4-%EC%97%B0%EC%82%B0%EC%9E%90)

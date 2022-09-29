@@ -110,6 +110,18 @@ var person = {
 delete person.gender;
 console.log(person.gender); // undefined
 ```
+### 객체 종류
+1. `Set`
+   1. 중복되지 않는 유일한 값들의 집함 
+   2. 생성 : `Set()` 생성자 함수로 생성 
+   3. 배열에서 중복된 요소를 제거하는데 사용한다.
+      ```js
+      // Set을 사용한 배열의 중복 요소 제거
+      const uniq = array => [...new Set(array)];
+      console.log(uniq([2, 1, 2, 3, 4, 3, 4])); // [2, 1, 3, 4]
+      ```
+      
+
 
 참고자료
 1. img : 위코드 제공 자료

@@ -44,3 +44,100 @@ for (i=1; i <= 100; i++){
 }
 
 console.log(s)
+
+
+//문제13: 몇 번째 행성인가요? 
+
+let planet = ['수성', '금성', '지구', '화성', '목성', '토성', '천왕성', '해왕성']
+
+const n = prompt('몇 번째 행성인가요?');
+
+console.log(planet[n-1]); // index 번호로 호출 해야함 
+
+//문제 14: 3의 배수인가요? 
+
+const n = prompt('3의 배수인가요?');
+
+if (n % 3 ===0){
+  console.log('짝')
+}else{
+  console.log(n)
+}
+
+
+//문제15: 자기소개 
+
+const name = prompt('이름을 입력해주세요.');
+
+console.log(`안녕하세요. 저는 ${name} 입니다.`)
+
+
+//문제16: 로꾸거
+
+const para = prompt('입력하세요.');
+
+const reverseString = para.split('').reverse().join('');
+
+console.log(reverseString);
+
+
+// 문제17: 놀이기구 키 제한 
+const height = prompt('키를 입력하세요.');
+
+(height >= 150)? console.log('YES') : console.log('NO');
+
+//문제18: 평균 점수 (my answer)
+const score = prompt('세 과목의 점수를 입력하세요.').split(' ').map(Number);
+let sumAvg = Math.floor(score.reduce((a,b)=> a+b, 0) / score.length)
+console.log(sumAvg);
+
+//문제18: 평균 점수 (textbook answer)
+const scores = prompt('세 과목의 점수를 입력하세요.').split(' ');
+let sum = 0;
+
+// 십진수의 형태의 숫자로 데이터 타입을 변환합니다.
+for (let i=0; i<3; i++){
+  sum += parseInt(scores[i], 10);
+}
+
+//Math.floor 메서드는 소수점 자리를 모두 버림합니다.
+console.log(Math.floor(sum/3)); 
+
+
+//문제 19: 제곱을 구하자 
+let num = prompt('숫자를 입력하세요').split(' ').map(Number);
+let [a, b] = num; // 자바스크립트의 구조 분해 할당 
+
+console.log(Math.pow(a,b))
+
+//문제20: 몫과 나머지 
+let num = prompt('숫자를 입력하세요').split(' ');
+console.log(parseInt(num[0]/num[1]) + ' ' + parseInt(num[0]% num[1]))
+
+//문제24: 대문자로 바꿔주세요! 
+let name = prompt('이름을 입력하세요');
+console.log(name.toUpperCase());
+
+//문제25: 원의 넓이를 구하세요
+function circle(radius){
+  return Math.PI * radius * radius
+}
+
+console.log(circle(prompt()))
+
+//문제 26: 행성 문제2 - 객체(Object)를 사용하면 되는 문제!! 
+
+const planets = {
+	'수성' : 'Mercury',
+	'금성' : 'Venus',
+	'지구' : 'Earth',
+	'화성' : 'Mars',
+	'목성' : 'Jupiter',
+	'토성' : 'Saturn',
+	'천왕성' : 'Uranus',
+	'해왕성' : 'Neptune',
+};
+
+const name = prompt("행성의 이름을 입력하세요.");
+
+console.log(planets[name]);

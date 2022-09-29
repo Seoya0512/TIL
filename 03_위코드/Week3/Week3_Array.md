@@ -132,7 +132,20 @@
         console.log(num); // [ 1, 2, 10, 4, 5 ]
         ```
 
-3. `filter`
+
+3. `concat` 
+    1. 주어진 배열에 기존 배열을 합쳐서 새로운 배열을 반환 
+    2. 원본 배열은 변경되지 않음 
+    3. 중복된 숫자나 글자를 가진 배열을 합쳐도 중복과 상관 없이 배열 합쳐줌 
+        ```js
+        const numbers = [1, 2, 3];
+        const numbers2 = [3, 4, 5];
+
+        numbers.concat(numbers2);      // [ 1, 2, 3, 3, 4, 5 ]
+
+        ```
+
+4. `filter`
     1. 조건에 맞는 요소(true)들만 모아서 새로운 배열을 반환
     2. 조건에 부합되는 요소가 없다면 '빈 배열' 반환 
     3. 구조
@@ -158,17 +171,39 @@
         console.log(result);      // [ 32, 17 ]
         ```
 
-4. `concat` 
-    1. 주어진 배열에 기존 배열을 합쳐서 새로운 배열을 반환 
-    2. 원본 배열은 변경되지 않음 
-    3. 중복된 숫자나 글자를 가진 배열을 합쳐도 중복과 상관 없이 배열 합쳐줌 
+
+5. `map` 
+    1. 배열 내의 모든 요소 각각에 대하여 주어진 함수를 호출한 결과를 모아 새로운 배열로 반환
+    2. 예시 : array1 요소에 각각 2를 곱한 결과를 새로운 배열로 반환 
         ```js
-        const numbers = [1, 2, 3];
-        const numbers2 = [3, 4, 5];
+        const array1 = [1, 4, 9, 16];
 
-        numbers.concat(numbers2);      // [ 1, 2, 3, 3, 4, 5 ]
+        // pass a function to map
+        const map1 = array1.map(x => x * 2);
 
+        console.log(map1);
+        // expected output: Array [2, 8, 18, 32]
         ```
+
+6. `reduce` : 재귀 함수 처럼 사용됨 -->  누적 합계, 최대 최소 등등 
+    1. 배열의 각 요소에 reducer 함수를 실행하고 하난의 결과값을 반환 
+    2. 구조 와 예시
+        ```js
+        // 매개변수 : callback, 초기 값 
+        arr.reduce(callback[, initialValue])
+
+        //예시 : score의 합을 나타내기 
+        const score = [20, 30, 40]
+        const scoreTotal = score.reduce((a,b)=> a+b, 0)
+
+7. `parseInt()` 
+    1. string으로 받은 값을 파싱해서 정수 혹은 NaN으로 반환 
+    2. 구조
+        ```js
+        // score 내의 각 문자열을 십진수 정수로 변환 
+        const nScores = parseInt(scores[i], 10); 
+        ```
+
 
 참고자료
 1. img : 위코드 제공자료

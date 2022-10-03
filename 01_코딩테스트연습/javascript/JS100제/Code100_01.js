@@ -141,3 +141,69 @@ const planets = {
 const name = prompt("행성의 이름을 입력하세요.");
 
 console.log(planets[name]);
+
+//문제 27: 객체 생성 
+const keys = prompt("이름을 입력하세요.").split(' ');
+const values = prompt("점수를 입력하세요.").split(' ');
+const obj = {};
+
+for (let i=0; i <keys.length; i++){
+  obj[keys[i]] = Number(values[i]);
+}
+
+console.log(obj);
+
+
+//문제28: 2-gram
+const data = prompt("문자열을 입력하세요.").split("");
+
+for (let i=0; i < data.length-1; i++){
+  console.log(data[i], data[i+1])
+}
+
+//문제 29: 대문자만 지나가세요
+const alphabet = prompt('알파벳을 입력하세요.');
+
+if (alphabet === alphabet.toUpperCase()){
+  console.log("YES");
+}else{
+  console.log("NO");
+}
+
+//문제 30: 문자열 속 문자 찾기 - indexOf()의 기능
+const phrase = prompt("문자열을 입력하세요.");
+const word = prompt("찾을 단어를 입력하세요.");
+
+/* indexOf():메서드는 호출한 스트링 객체나 배열에서 
+주어진 값과 일치하는 값 혹은 요소의 첫 번째 인덱스를 반환
+존재하지 않으면 -1을 반환
+*/
+
+console.log(phrase.indexOf(word));
+
+//문제32: 문자열 만들기 
+const string = prompt('문자열을 입력하세요.').split(' ');
+
+console.log(string.length);
+
+//문제33: 거꾸로 출력하기
+
+const number = prompt('숫자를 입력하세요.').split('').reverse();
+let result ='';
+
+for (let i=0; i < number.length; i++){
+  result += number[i];
+}
+console.log(string);
+
+
+//문제34: sort 구현하기 (오름차순)
+const unsorted = prompt("키를 입력하세요.");
+// sort함수는 기존의 element를 수정하기 때문에 다른 변수에 복사후 적용해줌 
+const sorted = unsorted.split(' ').sort((a, b) => a - b).join(' '); 
+
+if (unsorted === sorted){
+  console.log("YES")
+}else{
+  console.log("NO")
+}

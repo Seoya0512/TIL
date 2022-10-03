@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+
+.background { 
+    animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+/* contact info */
+.wrapper {
+    width: 50%;
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+    float: left;
+}
+
+.container {
+    width: auto;
+    height: auto;
+    position: relative;
+    text-align: center;
+  }
+
+.contact_pic {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    overflow: auto;
+    object-fit: fill;
+    text-align: center;
+    background-size: cover;
+    box-shadow: 1px 1px 3px 1px #dadce0;
+}
+
+.contact_info{
+    padding-top: 20%;
+}
+
+h4{
+    font-size: 25px;
+    font-style: italic;
+    color:#333232d5;
+    font-weight: 400px;
+    text-align: center;
+}
+
+.half_HL {
+    background: linear-gradient(to top, #FFE400 50%, transparent 50%);
+}
+
+.contact_text_info{
+    font-size: 25px;
+    font-style: italic;
+    color:#333232d5;
+    font-weight: 300px;
+    text-align: center;
+    line-height: 200%;
+}
+
+.ct {
+    margin: 20px;
+}
+
+
+
+
+
+
+
+

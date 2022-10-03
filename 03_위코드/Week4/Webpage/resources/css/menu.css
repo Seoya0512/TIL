@@ -45,12 +45,3 @@ a {
     padding-top: 30px;
 }
 
-.message {
-    position: relative;
-    font-size: 20px;
-    font-style: italic;
-    text-align: center;
-    align-items: center;
-    font-family: 'Roboto Slab', serif;
-    color:#333232d5
-}

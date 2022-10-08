@@ -207,3 +207,57 @@ if (unsorted === sorted){
 }else{
   console.log("NO")
 }
+
+
+//문제36: 구구단 출력하기 
+function gugudan(n){
+  let result=''; 
+  for (let i=1; i <10; i++){
+    result += i * n + ' ';
+  }
+  return result
+}
+
+console.log(gugudan(2))
+
+//문제37: 반장 선거 
+const keys = prompt("투표해 주세요.").split(' ');
+const obj = {};
+
+for (let i=0; i <keys.length; i++){
+  if (keys[i] in obj){
+    obj[keys[i]] += 1;
+  }else {
+    obj[keys[i]] = 1;
+  }
+}
+
+// reduce 메소드를 기억하기!!
+let winner = Object.keys(obj).reduce(function(a, b){
+  return obj[a] > obj[b] ? a : b
+});
+
+console.log(`${winner}(이)가 총 ${obj[winner]}표로 반장이 되었습니다.`);
+
+//문제 38: 호준이의 아르바이트
+const scores = prompt("점수를 입력하시오").split(' ');
+
+//sort 사용해서 점수를 순서대로 나열하기 
+scores.sort((a,b) => b-a);
+
+// 중복을 제거한 top3 값 확인 하기 
+let top3 = scores.filter((v,i) => scores.indexOf(v) === i).slice(0,3);
+
+// scores가 value 값에 포함되어 있는 개수 세기 
+let i = 0;
+let count = 0;
+
+for(let i = 0; i < scores.length; i++){
+  let n = scores[i];
+  if(top3.includes(n)){
+    count += 1;
+  }
+}
+
+// array.prototype.includes() : 배열 안에 차는 요소가 있는지 파악후 true, false 값으로 돌려줌 
+console.log(count);

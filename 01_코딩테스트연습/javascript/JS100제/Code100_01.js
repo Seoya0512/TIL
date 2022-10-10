@@ -261,3 +261,30 @@ for(let i = 0; i < scores.length; i++){
 
 // array.prototype.includes() : 배열 안에 차는 요소가 있는지 파악후 true, false 값으로 돌려줌 
 console.log(count);
+
+// 문제39:오타 수정하기 
+const string = prompt("입력하세요");
+
+// .replace는 첫번째로 발견되 문자열만 치환 
+console.log(string.replace('q', 'e'));
+
+// 문자열 전체를 치환하기 위해서는, 정규식을 사용해야한다. 
+console.log(string.replace(/q/g,'e'));
+
+let total = 0;
+let count = 0;
+let i = 1;
+
+//문제 40: 놀이동산에 가자
+const limit = prompt('제한 무게를 입력하세요.');
+const n = prompt('인원수를 입력하세요.');
+
+
+for (let i=1; i<=n; i++){
+  total += parseInt(prompt('무게를 입력해주세요.'), 10);
+  if (total <= limit){
+		count = i;
+  }
+}
+
+console.log(count);

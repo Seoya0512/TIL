@@ -56,20 +56,20 @@ console.log(planet[n-1]); // index 번호로 호출 해야함
 
 //문제 14: 3의 배수인가요? 
 
-const n = prompt('3의 배수인가요?');
+const num1 = prompt('3의 배수인가요?');
 
-if (n % 3 ===0){
+if (num1 % 3 ===0){
   console.log('짝')
 }else{
-  console.log(n)
+  console.log(num1)
 }
 
 
 //문제15: 자기소개 
 
-const name = prompt('이름을 입력해주세요.');
+const names = prompt('이름을 입력해주세요.');
 
-console.log(`안녕하세요. 저는 ${name} 입니다.`)
+console.log(`안녕하세요. 저는 ${names} 입니다.`)
 
 
 //문제16: 로꾸거
@@ -92,12 +92,12 @@ let sumAvg = Math.floor(score.reduce((a,b)=> a+b, 0) / score.length)
 console.log(sumAvg);
 
 //문제18: 평균 점수 (textbook answer)
-const scores = prompt('세 과목의 점수를 입력하세요.').split(' ');
+const scoreList = prompt('세 과목의 점수를 입력하세요.').split(' ');
 let sum = 0;
 
 // 십진수의 형태의 숫자로 데이터 타입을 변환합니다.
 for (let i=0; i<3; i++){
-  sum += parseInt(scores[i], 10);
+  sum += parseInt(scoreList[i], 10);
 }
 
 //Math.floor 메서드는 소수점 자리를 모두 버림합니다.
@@ -105,18 +105,18 @@ console.log(Math.floor(sum/3));
 
 
 //문제 19: 제곱을 구하자 
-let num = prompt('숫자를 입력하세요').split(' ').map(Number);
-let [a, b] = num; // 자바스크립트의 구조 분해 할당 
+let num2 = prompt('숫자를 입력하세요').split(' ').map(Number);
+let [a, b] = num2; // 자바스크립트의 구조 분해 할당 
 
 console.log(Math.pow(a,b))
 
 //문제20: 몫과 나머지 
-let num = prompt('숫자를 입력하세요').split(' ');
-console.log(parseInt(num[0]/num[1]) + ' ' + parseInt(num[0]% num[1]))
+let num3 = prompt('숫자를 입력하세요').split(' ');
+console.log(parseInt(num3[0]/num3[1]) + ' ' + parseInt(num3[0]% num3[1]))
 
 //문제24: 대문자로 바꿔주세요! 
-let name = prompt('이름을 입력하세요');
-console.log(name.toUpperCase());
+let nameInput = prompt('이름을 입력하세요');
+console.log(nameInput.toUpperCase());
 
 //문제25: 원의 넓이를 구하세요
 function circle(radius){
@@ -138,9 +138,9 @@ const planets = {
 	'해왕성' : 'Neptune',
 };
 
-const name = prompt("행성의 이름을 입력하세요.");
+const namePlanet = prompt("행성의 이름을 입력하세요.");
 
-console.log(planets[name]);
+console.log(planets[namePlanet]);
 
 //문제 27: 객체 생성 
 const keys = prompt("이름을 입력하세요.").split(' ');
@@ -182,9 +182,9 @@ const word = prompt("찾을 단어를 입력하세요.");
 console.log(phrase.indexOf(word));
 
 //문제32: 문자열 만들기 
-const string = prompt('문자열을 입력하세요.').split(' ');
+const strings = prompt('문자열을 입력하세요.').split(' ');
 
-console.log(string.length);
+console.log(strings.length);
 
 //문제33: 거꾸로 출력하기
 
@@ -221,14 +221,14 @@ function gugudan(n){
 console.log(gugudan(2))
 
 //문제37: 반장 선거 
-const keys = prompt("투표해 주세요.").split(' ');
-const obj = {};
+const keys1 = prompt("투표해 주세요.").split(' ');
+const obj1 = {};
 
 for (let i=0; i <keys.length; i++){
-  if (keys[i] in obj){
-    obj[keys[i]] += 1;
+  if (keys1[i] in obj1){
+    obj1[keys1[i]] += 1;
   }else {
-    obj[keys[i]] = 1;
+    obj1[keys1[i]] = 1;
   }
 }
 
@@ -249,11 +249,11 @@ scores.sort((a,b) => b-a);
 let top3 = scores.filter((v,i) => scores.indexOf(v) === i).slice(0,3);
 
 // scores가 value 값에 포함되어 있는 개수 세기 
-let i = 0;
-let count = 0;
+let ind = 0;
+let counts = 0;
 
-for(let i = 0; i < scores.length; i++){
-  let n = scores[i];
+for(let ind = 0; ind < scores.length; ind++){
+  let n = scores[ind];
   if(top3.includes(n)){
     count += 1;
   }
@@ -275,12 +275,12 @@ let total = 0;
 let count = 0;
 let i = 1;
 
-//문제 40: 놀이동산에 가자
+//문제 40: 놀이동산에 가자 
 const limit = prompt('제한 무게를 입력하세요.');
-const n = prompt('인원수를 입력하세요.');
+const numberPeople = prompt('인원수를 입력하세요.');
 
 
-for (let i=1; i<=n; i++){
+for (let i=1; i<=numberPeople; i++){
   total += parseInt(prompt('무게를 입력해주세요.'), 10);
   if (total <= limit){
 		count = i;
@@ -288,3 +288,78 @@ for (let i=1; i<=n; i++){
 }
 
 console.log(count);
+
+//문제 42: 2020년 
+const month = prompt('월을 입력하세요.');
+const day = prompt('일을 입력하세요.');
+
+function solution(a,b){
+  const week = ["SUN","MON","TUE","WED","THU","FRI","SAT"];
+  
+  const day = new Date(2020, a-1, b)
+  return week[day.getDay()];
+}
+
+console.log(solution(month,day))
+
+//문제 43: 10진수를 2진수로 
+const dec = Number(prompt("10진수를 입력"));
+console.log(dec.toString(2));
+
+//문제 44: 각 자리수의 합 
+const num5 = prompt('숫자를 입력').split('').map(Number);
+
+let sumNumber = 0;
+for (let i=0; i<num5.length; i++){
+  sumNumber += num5[i]
+}
+
+console.log(sumNumber);
+
+// 문제 45: getTime()함수 사용하기 
+
+// Calculate milliseconds in a year
+const minute = 1000 * 60;
+const hour = minute * 60;
+const day = hour * 24;
+const year = day * 365;
+
+// Divide Time with a year
+const d = new Date();
+let years = Math.floor(d.getTime() / year) + 1970;
+
+console.log(years);
+
+
+//문제 48: 대소문자 바꿔서 출력 : string index를 확인하고 새로운 문자열로 생성
+let words = prompt('문자를 입력해주세요.');
+let change = '';
+
+for (let i=0; i <words.length; i++){
+  if (words[i] !== words[i].toUpperCase()){
+    change += words[i].toUpperCase()
+  }else{
+    change += words[i].toLowerCase()
+  }
+}
+
+console.log(change)
+
+//문제 49: 최댓값 구하기 (내 답안) 
+const numList = prompt('숫자를 입력하세요.').split(' ');
+
+//Math.max는 배열형태를 분류할 수 없음으로 속성 변경 
+const max = Math.max(...numList); 
+console.log(max);
+
+// 교제 답안 : string 값을 int로 변환했고, sort로 내림차순으로 분류
+let numbers = prompt('10개의 숫자를 입력하세요').split(' ').map((n) => {
+  return parseInt(n, 10);
+});
+
+numbers.sort((a, b) => {
+  return b-a;
+});
+
+console.log(numbers[0]);
+

@@ -1,6 +1,7 @@
+/* 코드 기록 및 회고록: https://velog.io/@seoya_lee/회고록04JavaScript-100제-1부-코드-리뷰하기 */
+
 // 문제 2: 배역의 내장함수 
 // splice() 메서드는 배열의 요소를 삭제 또는 교체하거나 새 요소를 추가하여 배열의 내용을 변경
-
 var arr = [200, 100, 300];
 arr.splice(2, 0, 10000); 
 
@@ -9,7 +10,6 @@ console.log(arr);
 
 // 문제 8 : 객체의 키 이름 중복 
 // 객체에서 키 이름이 중복될 경우 뒤에 위치한 키 값이 출력 된다. 즉 84 return 
-
 var d = {
     'height':180,
     'weight':78,
@@ -311,7 +311,7 @@ console.log(check_prime(num));
 
 //문제 42: 2020년 
 const month = prompt('월을 입력하세요.');
-const day = prompt('일을 입력하세요.');
+const days = prompt('일을 입력하세요.');
 
 function solution(a,b){
   const week = ["SUN","MON","TUE","WED","THU","FRI","SAT"];
@@ -320,7 +320,7 @@ function solution(a,b){
   return week[day.getDay()];
 }
 
-console.log(solution(month,day))
+console.log(solution(month,days))
 
 //문제 43: 10진수를 2진수로 
 const dec = Number(prompt("10진수를 입력"));
@@ -377,6 +377,24 @@ arrSum.forEach((n)=>{
 
 console.log(sum);
 
+//문제 47: set 자료 응용형 
+const people = {
+  이호준: "01050442903",
+  이호상: "01051442904",
+  이준호: "01050342904",
+  이호준: "01050442903",
+  이준: "01050412904",
+  이호: "01050443904",
+  이호준: "01050442903"
+};
+
+// 중복을 제거하는 Set 생성 
+let results = new Set();
+// people에 있는 key의 값을 result에 저장 
+for (let key in people) {
+  results.add(people[key]);
+}
+console.log(results.size);
 
 //문제 48: 대소문자 바꿔서 출력 : string index를 확인하고 새로운 문자열로 생성
 let words = prompt('문자를 입력해주세요.');

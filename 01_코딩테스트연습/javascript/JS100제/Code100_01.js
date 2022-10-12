@@ -289,6 +289,26 @@ for (let i=1; i<=numberPeople; i++){
 
 console.log(count);
 
+//문제 41: 소수판별 
+const num = Number(prompt("숫자를 입력하세요."));
+console.log(num)
+
+// 1과 자기 자신만으로 나눠지는지 검사 
+function check_prime(num) { 
+  if (num === 1){
+    return false;
+  }
+  
+  for (let i=2; i<num; i++){
+    if(num % i ===0){
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(check_prime(num));
+
 //문제 42: 2020년 
 const month = prompt('월을 입력하세요.');
 const day = prompt('일을 입력하세요.');
@@ -330,6 +350,33 @@ let years = Math.floor(d.getTime() / year) + 1970;
 
 console.log(years);
 
+//문제 46: 각 자리수 합 
+let arr = [];
+let arrSum = 0;
+
+// 숫자를 나열한 배열 생성하기 
+for (let i=1;i<=20; i++){
+  arrSum.push(i)
+}
+
+/* forEach()는 배열의 element에 적용하는 메서드
+1) arr의 element 한개를 'n'으로 정의 
+2) n % 10 을 통해 나머지 값을 sum에 저장 
+3) Math.floor(n/10)을 통해 10의 자리수 추출 
+4) 3번을 통해 나온 n을 다시 while문에 넣어서 0이 될때까지 반복
+예시) n = 18, 2번) sum += 8 3번) n = 1 
+-while 문 - 2번) sum += 1 3번) n =0 --while 문--
+n = 19...  */
+
+arrSum.forEach((n)=>{
+  while(n!=0){
+    sum += (n%10);
+    n = Math.floor(n/10);
+  }
+})
+
+console.log(sum);
+
 
 //문제 48: 대소문자 바꿔서 출력 : string index를 확인하고 새로운 문자열로 생성
 let words = prompt('문자를 입력해주세요.');
@@ -363,3 +410,24 @@ numbers.sort((a, b) => {
 
 console.log(numbers[0]);
 
+//문제 50: 버블정렬 구하기 
+function bubble(arr) {
+  let result = arr.slice(); 
+
+  for (let i = 0; i < result.length - 1; i++) {
+    for (let j = 0; j < result.length-i; j++) {
+      if (result[j] > result[j + 1]) {
+        let tmp = result[j];
+        result[j] = result[j+1]
+        result[j+1]=tmp
+      }
+    }
+  }
+  return result;
+}
+
+const items = prompt('입력해주세요.').split(' ').map((n) => {
+  return parseInt(n, 10);
+});
+
+console.log(bubble(items));

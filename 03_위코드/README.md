@@ -3,6 +3,7 @@
 #### WEEK 1 : 자기소개 웹페이지 만들기 
 - [웹페이지 제작기 회고록](./Week1/notes/webpage_review.md)
 - [스터디 노트 week1](./Week1/notes/week1_studynote.md)
+- [자바스크립트를 활용한 동적 웹사이트 구축](./Week4/Webpage/README.md)
 
 #### WEEK 2 - 4 : Javascript 기초
 - [스터디 노트 week2](./Week2/Week2_notes.md)

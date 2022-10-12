@@ -39,14 +39,22 @@ ___
 ### 3. 위코드
 - [Week1](./03_%EC%9C%84%EC%BD%94%EB%93%9C/Week1/)
 - [Week2](./03_%EC%9C%84%EC%BD%94%EB%93%9C/Week2/)
+- [Week3](./03_%EC%9C%84%EC%BD%94%EB%93%9C/Week3/)
+- [Week4](./03_%EC%9C%84%EC%BD%94%EB%93%9C/Week4/)
 
 <br>
 
 ### 4. 네이버부스트코스
+- [PY4E](./04_%EB%84%A4%EC%9D%B4%EB%B2%84%EB%B6%80%EC%8A%A4%ED%8A%B8%EC%BD%94%EC%8A%A4/PY4E)
+- [데이터사이언스](./04_%EB%84%A4%EC%9D%B4%EB%B2%84%EB%B6%80%EC%8A%A4%ED%8A%B8%EC%BD%94%EC%8A%A4/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%82%AC%EC%9D%B4%EC%96%B8%EC%8A%A4/)
+  
 <br>
 
 ### 5. Git과 Git Hub
+- [Git과 GitHub 사용방법](./05_Git/README.md)
+
 <br>
 
 ### 6. 마크다운 
+- [마크다운 기본문법](./06_MarkDown/README.md)
 

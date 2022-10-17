@@ -21,7 +21,7 @@
 
 a {
     text-decoration: none;
-    color:#333232d5;
+        color:#333232d5;
 }
 
 /* menu */
@@ -37,7 +37,7 @@ a {
 .menu li a:hover {
     text-decoration: underline;
     text-decoration-color:gray;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 3px;
 }
 
 .menu * {
@@ -56,71 +56,67 @@ a {
     padding-top: 30px;
 }
 
-/* What I did List */
-.wrapper {
+/* 메인 내용을 float= "left"를 사용해 두 단락으로 나누기 */ 
+
+.whoami_wrap {
     position: relative;
-    width: 25%;
+    width: 50%;
     height: 500px;
     float: left;
-    text-align: center;
-    padding-top: 50px;
 }
 
-.container {
-    position: relative;
-    height: auto;
-    float: left;
-    margin-left: 10px;
-    margin-right: 10px;
+#explain {
     text-align: center;
-  }
-
-.image {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 20%;
+    padding-top: 10px;
     margin: auto;
+    opacity: 0;
+}
+
+.whoami_wrap img {
+    display: block;
+    margin: auto;
+    width: auto;
+    height: 350px;
     overflow: auto;
     object-fit: fill;
     text-align: center;
-    background-size: cover;
+    padding-top: 130px;
 }
-  
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    background-color:rgba(0, 0, 0, 0.6);
-    transition: opacity 0.25s;
-    border-radius: 20%;
-}
-  
-.container:hover .overlay {
+
+.whoami_wrap:hover #explain{
     opacity: 1;
-}
-  
-.text {
-    color: white;
-    font-size: 13px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-
-.wrapper h5 {
-    padding-top: 20px;
+.whoami_text_name {
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 120px;
+    text-align: center;
 }
 
+.whoami_text_description {
+    font-size: 18px;
+    font-weight:310px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: 50px;
+    text-align: center;
+    color: #333232d5;
+}
+
+.whoami_text_description p {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    align-items: center;
+    padding-top: 18px;
+    color:#333232d5;
+}
+
+/*특정 값에 밑줄 */
+.half_HL {
+    background: linear-gradient(to top, #FFE400 50%, transparent 50%);
+}
 
 

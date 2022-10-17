@@ -6,6 +6,12 @@
     animation: fadein 1.5s;
 }
 
+body{
+    font-family: Helvetica Neue,Helvetica,Arial,メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic;
+    color:#20303c;
+    background-color:#f9fafa;
+}
+
 @keyframes fadein {
   from {
       opacity:0;
@@ -41,6 +47,7 @@
     text-align: center;
     background-size: cover;
     box-shadow: 1px 1px 3px 1px #dadce0;
+    border-radius: 50%;
 }
 
 .contact_info{
@@ -50,7 +57,6 @@
 h4{
     font-size: 25px;
     font-style: italic;
-    color:#333232d5;
     font-weight: 400px;
     text-align: center;
 }
@@ -62,7 +68,6 @@ h4{
 .contact_text_info{
     font-size: 25px;
     font-style: italic;
-    color:#333232d5;
     font-weight: 300px;
     text-align: center;
     line-height: 200%;

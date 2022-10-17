@@ -1,0 +1,46 @@
+/* img */
+body{
+    font-family: Helvetica Neue,Helvetica,Arial,メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic;
+    color:#20303c;
+    background-color:#f9fafa;
+}
+
+.slider{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.slider-item{
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    z-index: 0;
+    transition:all 0.5s ease-in-out; /*입체적으로 구현*/
+    transform: scale(0.9);
+}
+
+
+.main_pic {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+
+.showing{
+    z-index: 1; /* 현재 순서의 슬라이드만 보이게 하기 위한 동작*/
+    opacity: 1;
+    transform: none;
+}
+
+/*footer*/
+.message {
+    position: relative;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    align-items: center;
+}
+

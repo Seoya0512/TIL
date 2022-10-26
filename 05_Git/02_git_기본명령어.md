@@ -1,7 +1,7 @@
 # Git 기본 명령어
 
 
-## Git 명령어 (commit 순서)
+# Git 명령어 (commit 순서)
 
 
 ### `git init` 

@@ -1,19 +1,16 @@
 # Git 기본 명령어
 
-___
 
-###  1. Git 명령어 (commit 순서)
+## Git 명령어 (commit 순서)
 
-___
 
-#### 1.  git init
+### 1. git init
 
 * 특정 폴더를 git 저장소 (repository)를 만들어 git으로 관리
   * .git 폴더가 생성됨 
 
 
-
-#### 2. git add 
+### 2. git add 
 
 *  working directory상의 변경 내용을 staging area에 추가하기 위해 사용
 
@@ -25,9 +22,7 @@ ___
   <file>에는 단일 파일, 복수 파일, 단일 폴더, 현재 디렉토리(.)등이 들어갈 수 있다
   ```
 
-
-
-#### 3-1.  git commit
+### 3-1.  git commit
 
 * staged 상태의 파일들을 커밋을 통해 버전으로 기록
 
@@ -39,14 +34,12 @@ ___
   $ git commit -m'<commit msg>'
   ```
 
-
-
-#### 3-2 . git commit 
+### 3-2 . git commit 
 
 * Git은 데이터를 파일 시스템의 *스냅샷*  으로 관리하고 매우 크기가 작음
 * 파일이 달라지지 않으면 성능을 위해 파일을 새로 저장하지 않음
 
-#### 4. git push 
+### 4. git push 
 
 * 원격 저장소 활용 명령어
 
@@ -58,19 +51,16 @@ ___
   $ git push <원격저장소이름><브랜치이름>
   ```
 
-   
 
-### 2. Git 파일 확인 
+## Git 파일 확인 
 
-___
-
-#### 1. git status
+### 1. git status
 
 * Git 저장소에 있는 파일의 상태를 확인하기 위해 활용
   * 파일 상태 확인 (*untracked files, changes not staged for commit, chages to be commited*)
   * commit 할 것이 없다  = *Nothing to commit, working tree clean*
 
-#### 2. git log
+### 2. git log
 
 * 현재 저장소에 기록된 커밋을 조회
 
@@ -81,16 +71,11 @@ ___
   $ git log -oneline
   $ git log -2 --oneline
   ```
+<br>
 
-  
+## 3. Git 설정파일 (config)
 
-
-
-### 3. Git 설정파일 (config)
-
-___
-
-#### 1. 사용자 정보 (commit author) 
+### 1. 사용자 정보 (commit author) 
 
 * **global user** : Github에서 설정한 사용자 정보 
 
@@ -109,8 +94,7 @@ ___
   * git config user.name
 
     
-
-#### 2. 설정 파일 
+### 2. 설정 파일 
 
 * —system
   * /etc/gitconfig
@@ -122,11 +106,9 @@ ___
   * .git/config
   * 특정 저장소에만 적용되는 설정
 
+<br>
 
-
-### 4. 원격저장소 활용 명령어
-
-___
+## 3. 원격저장소 활용 명령어
 
 * remote 확인 
 
@@ -157,29 +139,36 @@ ___
   ```bash
   $ git remote rename<이름><새이름>
   ```
-
   ___
+  <br>
+## repository 클론하기 (clone)
+GitHub repo를 먼저 생성한 뒤 clone을 받아 내 로컬환경에 다운로드 후 프로젝트를 시작 
 
-  1. **git clone**
+  ### 1. git clone
 
      - 원격 저장소를 복제하여 가져옴 
+     - Git hub repo 에서 'Clone or download' 버튼을 누르고 복사 아이콘 클릭 
+  
+    ```bash
+    git clone <github-repo-link>
+    ```
 
-  2. **git pull**
-
-     - 원격 저장소로 부터 변경된 내역을 받아와서 이력을 병합함
+## git pull
+ git pull 명령어를 통해 remote 의 최신화된 코드를 내 로컬 repo 에 반영할 수 있습니다. 원격 저장소로 부터 변경된 내역을 받아와서 이력을 병합함
 
        ```bash
        $ git pull <원격저장소이름><브랜치이름>
+       $ git pull origin master
        ```
 
-  3. **git ignore**
+## git ignore
      * 특정 확장자에 가능  (*.mp4)
      * 특정 폴더에 가능 
      * 특정 파일에 가능 
 
 
 
-### github 에 잘못 올라간 폴더 및 파일 삭제하기 
+## github 에 잘못 올라간 폴더 및 파일 삭제하기 
 
 ```bash
 # 폴더 삭제하기 
@@ -206,6 +195,3 @@ $ git push -u origin master
 ```bash
 $ git commit --amend -m 'Revise~~~'
 ```
-
-
-
